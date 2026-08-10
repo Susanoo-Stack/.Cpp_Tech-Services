@@ -1,0 +1,65 @@
+
+                  
+(function () {
+    'use strict';
+
+    
+    const panels = document.querySelectorAll('article.panel');
+
+    function revealPanel(el) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+    }
+
+    
+    function initScrollReveal() {
+        if (window.innerWidth > 900) return;
+
+        panels.forEach(function (panel) {
+            panel.style.opacity = '0';
+            panel.style.transform = 'translateY(20px)';
+            panel.style.transition = 'opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s cubic-bezier(0.77, 0, 0.175, 1)';
+        });
+
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        revealPanel(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            panels.forEach(function (panel) {
+                observer.observe(panel);
+            });
+        }
+
+        
+        setTimeout(function () {
+            panels.forEach(function (panel) {
+                revealPanel(panel);
+            });
+        }, 3000);
+    }
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && window.location.hash) {
+            window.location.hash = '';
+        }
+    });
+
+    
+    document.querySelectorAll('.modal-overlay').forEach(function (overlay) {
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) {
+                window.location.hash = '';
+            }
+        });
+    });
+
+    // Init
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+})();
