@@ -685,5 +685,8 @@ article.panel:nth-child(5) .spine { animation-delay: 1.0s; }
 }
 .global-header img{
     width: 60px;
-    height: 60px;
+    height: 50px;
+}
+#link {
+    color: #FFF;
 }

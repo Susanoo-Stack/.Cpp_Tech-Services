@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.Cpp_Tech Services</title>
-    <meta name="description" content=".Cpp Tech Services — desenvolvimento web, pentest, estrutura de dados, formação em TI e criação de software sob medida.">
+    <title>.Cpp_Tech-Services</title>
+    <meta name="description" content=".Cpp_Tech-Services — desenvolvimento web, pentest, estrutura de dados, formação em TI e criação de software sob medida.">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <meta property="og:title" content=".Cpp_Tech-Services">
+    <meta property="og:description" content=".Cpp_Tech-Services — Desenvolvimento Web, Auditoria de segurança, Estrutura de dados, Formação em TI e Criação de Software sob medida.">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href=".Cpp.png">
+    <link rel="icon" href="Cpp.png">
     </head>
+
 <body>
 
     <!-- Cabeçalho Global -->
     <header class="global-header">
-        <img src="_.Cpp_transparente.png" alt=".Cpp_Logo">
         <nav class="nav">
             <a href="#servico">Serviços</a>
             <a href="#sobre">Sobre</a>
@@ -174,11 +179,39 @@
                 </a>
             </div>
         </article>
-              
+        <!-- Painel 06 -->
+        <article class="panel">
+            <div class="panel__bg">
+                <img src="projecto.jpg"
+                     alt="imagem ilustrativa concernente ao painel"
+                     loading="lazy">
+            </div>
+            <div class="details">
+                <p class="details__category">.Cpp</p>
+                <h3 class="details__title">Projectos</h3>
+                <div class="details__meta">
+                    <div class="details__meta-item">
+                        <span class="details__meta-value">Desenvolvimento de Software</span>
+                    </div>
+                    <div class="details__meta-item">
+                        <span class="details__meta-value">//</span>
+                    </div>
+                    <div class="details__meta-item">
+                        <span class="details__meta-value">Produtos Full-Stack</span>
+                    </div>
+                </div>
+                <a href="#projectos" class="btn-view">
+                    Explorar
+                    <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+                    </svg>
+                </a>
+            </div>
+        </article>
+      
     </main>           
     <!--  Janela.Serviço -->
     <div id="servico" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>        
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Serviços<br>prestados</h2>
@@ -207,19 +240,18 @@
     
     <!-- Janela.Sobre -->
     <div id="sobre" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>  
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
-            <h2 class="modal__heading">Saiba mais sobre a<br>.Cpp</h2>
-            <p class="modal__text"><strong> A origem</strong>  .Cpp nasceu da perspetiva fundamental de fornecer uma identidade digital sólida e profissional para
+            <h2 class="modal__heading">Saiba mais sobre a<br>.Cpp_Tech-Services</h2>
+            <p class="modal__text"><strong> A origem</strong>  .Cpp_Tech-Services nasceu da perspetiva fundamental de fornecer uma identidade digital sólida e profissional para
 negócios, profissionais e estudantes que procuram estabelecer-se no ecossistema tecnológico, mas
 encontram barreiras no alcance e na implementação prática. A busca por uma trajetória estudantil ou
 empresarial de sucesso no ramo da tecnologia é hoje amplamente cobiçada no mercado nacional.</p>
             <p class="modal__text">Contudo, a escassez de meios acessíveis e de orientação técnica especializada atrasa este
-desenvolvimento. A .Cpp surge para revolucionar este cenário através do desenvolvimento de sistemas
+desenvolvimento. A .Cpp_Tech-Services surge para revolucionar este cenário através do desenvolvimento de sistemas
 robustos e de soluções digitais personalizadas.</p>
             <hr class="modal__divider">
-            <p class="modal__text"><strong>Resolução de problemas e diferencial</strong><br>A .Cpp resolve de forma transversal a ausência de posicionamento técnico do mercado: estabelece sites
+            <p class="modal__text"><strong>Resolução de problemas e diferencial</strong><br>A .Cpp_Tech-Services resolve de forma transversal a ausência de posicionamento técnico do mercado: estabelece sites
 para lojas físicas isoladas, modela perfis de desenvolvimento para estudantes, e substitui ementas
 físicas por menus virtuais dinâmicos em restaurantes.</p>
             <hr class="modal__divider">
@@ -231,7 +263,6 @@ um comprometimento intransigente em entregar a melhor experiência tecnológica 
 
             <!-- Janela.Contacto -->
     <div id="contacto" class="modal-overlay">                           
-    <a href="#" class="modal__close" aria-label="Close">&times;</a>
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Entre em<br>contacto</h2>
@@ -248,7 +279,7 @@ um comprometimento intransigente em entregar a melhor experiência tecnológica 
                 </div>
                 <div class="modal__contact-item">
                     <p class="modal__contact-label">Social</p>
-                    <p class="modal__contact-value"><a href="https://wa.me/244950882908" target="_blank" rel="noopener">WhatsApp (+244 950882908)</a></p>
+                    <p class="modal__contact-value"><a href="https://wa.me/+244950882908" target="_blank" rel="noopener">WhatsApp (+244 950882908)</a></p>
                 </div>
                 <div class="modal__contact-item">
                     <p class="modal__contact-label">Localização</p>
@@ -260,8 +291,7 @@ um comprometimento intransigente em entregar a melhor experiência tecnológica 
     
     <!-- Janelas.Conteúdo -->
     <!-- Janela.web -->
-    <div id="web" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>  
+    <div id="web" class="modal-overlay"> 
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Identidade digital</h2>
@@ -274,7 +304,7 @@ correção de segurança.</p>
 otimizados para motores de busca (SEO) e com alta velocidade de carregamento. Como bónus
 exclusivo de lançamento, a Cpp inclui uma auditoria de segurança básica no código (Pentest Web) antes da entrega, garantindo que o cliente comece a operar blindado contra as vulnerabilidades web mais comuns.</p>
             <hr class="modal__divider">
-            <p class="modal__text">Para os clientes que já possuem um website ou sistema web em operação, a .Cpp oferece um
+            <p class="modal__text">Para os clientes que já possuem um website ou sistema web em operação, a .Cpp_Tech-Services oferece um
 serviço focado estritamente em Segurança da Informação. É realizado um teste de intrusão
 (Pentest Web) detalhado no sistema, simulando ataques cibernéticos reais para identificar brechas
 de injeção de código, falhas de autenticação ou vazamento de dados, culminando na entrega de
@@ -282,12 +312,11 @@ um relatório técnico de mitigação.</p>
         </div>
     </div>
     <!-- Janela.estrutura -->
-    <div id="estrutura" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>  
+    <div id="estrutura" class="modal-overlay">  
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Estrutura de dados</h2>
-            <p class="modal__text"><strong>Descrição do serviço</strong> A .Cpp oferece uma infraestrutura de gestão que substitui processos obsoletos por decisões
+            <p class="modal__text"><strong>Descrição do serviço</strong> A .Cpp_Tech-Services oferece uma infraestrutura de gestão que substitui processos obsoletos por decisões
 automatizadas baseadas em dados reais. O ecossistema operacional divide-se de acordo com o nível
 de maturidade digital do cliente.</p>
 
@@ -300,12 +329,11 @@ de maturidade digital do cliente.</p>
     </div>
     <!-- Janela TI -->
      <div id="teach" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>  
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Didática TI</h2>
             <p class="modal__text"><strong>Descrição do serviço</strong> Este serviço representa uma rutura no modelo tradicional de ensino técnico, eliminando a barreira de
-que a programação de alto nível exige obrigatoriamente computadores dispendiosos. Capitalizando a sólida competência didática e pedagógica do fundador, a .Cpp desenvolveu uma metodologia científica capaz de transformar qualquer smartphone numa estação completa de desenvolvimento de software.</p>
+que a programação de alto nível exige obrigatoriamente computadores dispendiosos. Capitalizando a sólida competência didática e pedagógica do fundador, a .Cpp_Tech-Services desenvolveu uma metodologia científica capaz de transformar qualquer smartphone numa estação completa de desenvolvimento de software.</p>
 
            <p class="modal__text">Os destaques do programa incluem aulas estruturadas com forte metodologia pedagógica para rápida absorção da lógica. Configuração completa de ambientes integrados de desenvolvimento (IDEs) móveis nativos e projetos práticos e portfólio de código gerado totalmente via smartphone e um bônus de Inglês técnico para carreira tecnológica.</p>
             <hr class="modal__divider">
@@ -315,20 +343,19 @@ nas linguagens mais requisitadas pelo mercado global: Pseudocódigo, Java, C, C+
 </p>
             <hr class="modal__divider">
             <p class="modal__text"><strong>Diferencial Exclusivo primário: Integração grátis de Inglês técnico</strong><br>
-Este tema teve destaque devido ao facto de ser um diferencial no mundo da Mentoria tecnológica, a .Cpp fornece um pacote grátis de Inglês técnico próprio do mundo tecnológico incluso em todas as formações acima citadas independentemente da categoria. A nossa empresa confia no resultado dos nossos formandos, razão pela qual optamos em fornecer a melhor experiência na formação tecnológica incluindo "Inglês Técnico".</p>
+Este tema teve destaque devido ao facto de ser um diferencial no mundo da Mentoria tecnológica, a .Cpp_Tech-Services fornece um pacote grátis de Inglês técnico próprio do mundo tecnológico incluso em todas as formações acima citadas independentemente da categoria. A nossa empresa confia no resultado dos nossos formandos, razão pela qual optamos em fornecer a melhor experiência na formação tecnológica incluindo "Inglês Técnico".</p>
             <hr class="modal__divider">
             <p class="modal__text"><strong>Diferencial Exclusivo secundário: Integração com Hardware (Arduino Mobile)</strong><br>
-O grande marco de inovação deste serviço é o módulo de robótica e automação residencial. A .Cpp fornece ao estudante uma placa de prototipagem Arduino e os componentes físicos necessários. Através de técnicas exclusivas, o aluno aprende a escrever o código de controlo de hardware diretamente no ecrã do seu telemóvel, compilando e injetando o programa na placa física para controlar
+O grande marco de inovação deste serviço é o módulo de robótica e automação residencial. A .Cpp_Tech-Services fornece ao estudante uma placa de prototipagem Arduino e os componentes físicos necessários. Através de técnicas exclusivas, o aluno aprende a escrever o código de controlo de hardware diretamente no ecrã do seu telemóvel, compilando e injetando o programa na placa física para controlar
 luzes, motores e sensores na realidade. O estudante aprende programação eletrónica e computacional sem tocar num computador.</p>
         </div>
     </div>
     <!-- Janela.Criação -->
      <div id="on-demand" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>  
         <div class="modal__content">
             <p class="modal__label">Conecte-se</p>
             <h2 class="modal__heading">Criação de software</h2>
-            <p class="modal__text"><strong>Descrição do serviço (ON-DEMAND)</strong> A .Cpp atua como uma célula de desenvolvimento externa de elite. Através de um canal seguro focado
+            <p class="modal__text"><strong>Descrição do serviço (ON-DEMAND)</strong> A .Cpp_Tech-Services atua como uma célula de desenvolvimento externa de elite. Através de um canal seguro focado
 na web, os clientes submetem requisições técnicas detalhadas com os requisitos do software que
 necessitam que seja programado. A viabilidade da lógica e a arquitetura requerida são analisadas e
 desenvolvidas de forma nativa e rigorosa dentro de prazos estritamente negociados, respeitando os
@@ -337,7 +364,7 @@ mais altos padrões de otimização de memória.</p>
            <p class="modal__text">O pilar central deste serviço é o sigilo total. Os motivos pelos quais o cliente não pode ou não quer
 desenvolver o software internamente nunca são questionados. Uma vez entregue o código e efetuado o
 pagamento, os direitos de propriedade intelectual são transferidos na totalidade. A identidade do cliente
-e o envolvimento da .Cpp no projeto são mantidos sob anonimato absoluto..</p>
+e o envolvimento da .Cpp_Tech-Services no projeto são mantidos sob anonimato absoluto..</p>
             <hr class="modal__divider">
             <p class="modal__text"><strong>Desenvolvimento Full-Stack</strong><br>Damos vida à tua ideia com um produto digital completo, do zero ao ar. O nosso serviço de Desenvolvimento Fullstack cobre tudo: a cara bonita que o cliente vê e a engrenagem poderosa que roda por trás.</p>
             <hr class="modal__divider">
@@ -346,7 +373,117 @@ e o envolvimento da .Cpp no projeto são mantidos sob anonimato absoluto..</p>
     </div>
     <!-- Janela.Feedback -->
      <div id="feedback" class="modal-overlay">
-        <a href="#" class="modal__close" aria-label="Close">&times;</a>
+        <!-- Painel 01 -->
+        <article class="panel">
+            <div class="panel__bg">
+                <img src="logo-nilartes.png"
+                     alt="imagem da Nil'Artes"
+                     loading="lazy">                 
+            </div>                                      
+            <div class="details">                                                                                                             
+                <a href="#nilartes" class="btn-view">
+                    Explorar
+                    <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+                    </svg>
+                </a>
+            </div>
+        </article>
+    </div>
+     <!--  Janela.Nil'Artes -->
+    <div id="nilartes" class="modal-overlay">
+               
+        <div class="modal__content">
+            <p class="modal__label">Conecte-se</a></p>
+            <h2 class="modal__heading">Nil'Artes</h2>
+            <p class="modal__text">Tivemos o prazer de desenvolver o primeiro site da empresa Nil'Artes, uma empresa sobre orgulho, beleza, cultura e identidade. Como sempre, a .Cpp_Tech-Services cumpriu sua missão entregando o melhor software possível para as preferências de sua cliente. Eis o feedback de Nilmara de Almeida, actual CEO da Nil'Artes:</br> </p>
+            <hr class="modal__divider">
+            É satisfatório trabalhar com quem promete compromisso, entrega e responsividade no trabalho cumprindo suas palavras, em primeira mão, eu - Nilmara de Almeida, afirmo que a .Cpp_Tech-Services pode ser uma empresa nova, mas cumpre os requisitos necessários para ser comparada à uma macro-empresa. Resta-me apenas parabenizar o trabalho da empresa em causa e motivar a continuarem na mesma linhagem inovando sempre. Termino meu feedback destacando esses pontos notórios na elaboração do meu projecto web pela .Cpp_Tech-Services:
+            <ul class="modal__project-list">
+                <li>
+                    <span class="modal__project-name">Responsabilidade</span>
+                    <span class="modal__project-year">Os</br>projectos são</br>entregues no </br>prazo predestinado</span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Compreensão</span>
+                    <span class="modal__project-year">Design ajustável pela</br>preferência do cliente</span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Compromisso</span>
+                    <span class="modal__project-year">Seriedade no</br> ambiente de trabalho</span>
+                </li>     
+                 <li>
+                    <span class="modal__project-name">Confirmação</span>
+                    <span class="modal__project-year"><a id="link" href="https://nilartes.vercel.app/">Clique para acessar</br>o site</a></span>
+                </li>                                    
+            </ul>
+    </div>
+</div>
+<!-- Janela.Projecto -->
+     <div id="projectos" class="modal-overlay">
+        <!-- Painel 01 -->
+        <article class="panel">
+            <div class="panel__bg">
+                <img src="todo-list.png"
+                     alt="imagem da<!DOCTYPE html>
+                     <html lang="pt">
+                     <head>
+                         <meta charset="UTF-8">
+                         <title>Título da página</title>
+                     </head>
+                     <body>
+                         
+                     </body>
+                     </html> To-do_List"
+                     loading="lazy">                 
+            </div>                                      
+            <div class="details">                                                                                                             
+                <a href="#To-do_List" class="btn-view">
+                    Explorar
+                    <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+                    </svg>
+                </a>
+            </div>
+        </article>
+    </div>
+     <!--  Janela.To-do_List -->
+    <div id="To-do_List" class="modal-overlay">
+               
+        <div class="modal__content">
+            <p class="modal__label">Conecte-se</a></p>
+            <h2 class="modal__heading">To-do_List</h2>
+            <p class="modal__text">To-do_List é um software full-stack desenvolvido pela empresa .Cpp_Tech-Services...<br>É basicamente uma lista de tarefas desenvolvida com o objectivo de revolucionar as agendas com alarme à um estilo elegante e funcional.</p>
+            <hr class="modal__divider">
+            To-do_List engloba factores que o auto-diferenciam de outros softwares do mesmo gênero, a saber: 
+            <ul class="modal__project-list">
+                <li>
+                    <span class="modal__project-name">Simplicidade</span>
+                    <span class="modal__project-year">Design minimalista e de <br>fácil adaptação</span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Layout</span>
+                    <span class="modal__project-year">Temos</br> um design ajustável <br>à qualquer dispositivo</span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Diferencial</span>
+                    <span class="modal__project-year">Ecossistema web, mobile <br>e desktop</span>
+                </li>     
+                 <li>
+                    <span class="modal__project-name">Entrega</span>
+                    <span class="modal__project-year"><a id="link" href="https://todolist.vercel.app/">Clique para acessar o site</a></span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Entrega</span>
+                    <span class="modal__project-year"><a id="link" href="###">Clique para <br>aderir ao aplicativo <br>mobile</a></span>
+                </li>
+                <li>
+                    <span class="modal__project-name">Entrega</span>
+                    <span class="modal__project-year"><a id="link" href="###">Clique para <br>aderir ao aplicativo <br>desktop</a></span>
+                </li>
+            </ul>
+    </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
