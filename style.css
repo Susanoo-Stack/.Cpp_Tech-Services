@@ -14,8 +14,9 @@
     --ash: #6B6B6B;
     --white: #ffffff;
     --seam: #111;
-    --font-spine: 'Manrope', sans-serif;
-    --font-mono: 'Space Mono', monospace;
+    --font-spine: /*'Fraunces', serif;*/'Arial';
+    --font-body: /*'Manrope', sans-serif;*/'Arial';
+    --font-mono: /*'Space Mono', monospace;*/'Arial';
     --ease-heavy: cubic-bezier(0.77, 0, 0.175, 1);
     --duration: 0.8s;
 }
@@ -28,6 +29,7 @@ html {
 }
 
 body {
+    font-family: var(--font-body);
     background: var(--carbon);
     color: var(--off-white);
     overflow: hidden;
